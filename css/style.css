@@ -504,11 +504,12 @@ body {
   transition: background-color var(--timing-duration) var(--timing-function);
 }
 .text-white {
-  font-weight: 500;
+  max-width: 264px;
+  font-weight: 400;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
   color: var(--primary-bg-color);
 }
 
@@ -519,7 +520,7 @@ body {
 .address-subscription {
   display: flex;
   flex-direction: column;
-  margin-left: 96px;
+  margin-left: auto;
 }
 .footer-form {
   display: flex;
@@ -560,6 +561,7 @@ body {
 }
 .footer-form-submit-icon {
   margin-left: 16px;
+  fill: var(--primary-bg-color);
 }
 .visually-hidden {
   position: absolute;
@@ -652,6 +654,9 @@ body {
 .modal-form-field {
   margin-bottom: 8px;
 }
+.modal-form-item {
+  position: relative;
+}
 .modal-form-input-descr {
   display: block;
   font-size: 12px;
@@ -677,6 +682,7 @@ body {
   border-color: var(--accent);
   outline: none;
 }
+
 .modal-form-icon {
   position: absolute;
   display: flex;
@@ -725,27 +731,26 @@ body {
   color: var(--light-slate);
 }
 .modal-form-check-copy {
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  cursor: pointer;
   margin-right: 8px;
   transition: border-color var(--timing-duration) var(--timing-function),
     box-shadow var(--timing-duration) var(--timing-function);
+  fill: transparent;
+  color: var(--primary-bg-color);
 }
 .modal-form-check-copy-icon {
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 16px;
-  height: 16px;
-  opacity: 0;
-  transition: opacity var(--timing-duration) var(--timing-function);
+  fill: currentColor;
 }
-.modal-form-check:checked + .modal-form-check-copy-icon {
-  opacity: 1;
+.modal-form-check:checked + .modal-form-check-descr .modal-form-check-copy {
+  background-color: var(--accent-pressed-state);
+  border: none;
+  fill: var(--primary-bg-color);
 }
 .modal-form-check:focus + .modal-form-check-copy {
   border-color: var(--accent-pressed-state);
