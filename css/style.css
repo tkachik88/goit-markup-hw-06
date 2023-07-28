@@ -652,10 +652,10 @@ body {
   margin-top: 16px;
 }
 .modal-form-section {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .modal-form-section-texterea {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .modal-form-message {
   width: 100%;
@@ -753,6 +753,9 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+.modal-form-section-chekbox {
+  margin-bottom: 24px;
 }
 .modal-form-check-descr {
   margin-top: 16px;
