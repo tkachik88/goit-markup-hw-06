@@ -505,7 +505,7 @@ body {
 }
 .text-white {
   max-width: 264px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.5;
@@ -651,12 +651,39 @@ body {
   flex-direction: column;
   margin-top: 16px;
 }
+.modal-form-section {
+  margin-bottom: 16px;
+}
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color var(--timing-duration) var(--timing-function);
+}
+.modal-form-message:hover {
+  border-color: var(--accent);
+}
 .modal-form-field {
-  margin-bottom: 8px;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
 }
 .modal-form-item {
   position: relative;
 }
+
 .modal-form-input-descr {
   display: block;
   font-size: 12px;
@@ -677,6 +704,8 @@ body {
   padding-left: 38px;
   color: var(--color-main-text);
   transition: border-color var(--timing-duration) var(--timing-function);
+  background-color: transparent;
+  outline: transparent;
 }
 .modal-form-input:focus {
   border-color: var(--accent);
@@ -690,6 +719,8 @@ body {
   bottom: 8px;
   width: 18px;
   height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: var(--color-main-text);
   transition: fill var(--timing-duration) var(--timing-function);
 }
@@ -739,8 +770,7 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
-  transition: border-color var(--timing-duration) var(--timing-function),
-    box-shadow var(--timing-duration) var(--timing-function);
+  transition: background-color var(--timing-duration) var(--timing-function);
   fill: transparent;
   color: var(--primary-bg-color);
 }
@@ -767,8 +797,7 @@ body {
   border: transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color var(--timing-duration) var(--timing-function),
-    border-color var(--timing-duration) var(--timing-function);
+  transition: background-color var(--timing-duration) var(--timing-function);
   color: var(--primary-bg-color);
   background-color: var(--accent);
   font-family: var(--primary-font);
